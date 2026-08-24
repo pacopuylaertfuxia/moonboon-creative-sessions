@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep Score &amp; AI Summary — Creative Session Readout</title>
+<meta name="description" content="Seven pitches, thirty-odd concepts, and the questions we didn't answer. Moonboon remote creative session, 24 August 2026.">
+<meta property="og:title" content="Sleep Score & AI Summary — Creative Session Readout">
+<meta property="og:description" content="Seven pitches, thirty-odd concepts, and the questions we didn't answer.">
+<meta property="og:image" content="img/paper-variants.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5f3f1; --cream:#f1e8de; --card:#fffefb;
+    --ink:#010101; --body:#464545; --muted:#70695f;
+    --sand:#b59e85; --sand-soft:#e5d5c5; --line:#e2ddd6;
+    --serif:'Newsreader', Georgia, serif;
+    --sans:'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --maxw:940px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--body);font-family:var(--sans);
+    font-weight:300;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .wide{max-width:1180px;margin:0 auto;padding:0 28px}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+
+  header{padding:88px 0 56px;border-bottom:1px solid var(--line)}
+  .kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);font-weight:500;margin:0 0 22px}
+  h1{font-family:var(--serif);font-weight:300;color:var(--ink);font-size:clamp(38px,6vw,62px);
+    line-height:1.08;letter-spacing:-.01em;margin:0 0 28px}
+  .hmw{border-left:2px solid var(--sand);padding:4px 0 4px 22px;font-family:var(--serif);
+    font-style:italic;font-weight:300;font-size:clamp(19px,2.6vw,23px);line-height:1.5;
+    color:var(--muted);max-width:660px;margin:0 0 36px}
+  .facts{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}
+  .fact{padding-right:40px;margin-right:40px;border-right:1px solid var(--line)}
+  .fact:last-child{border-right:none;margin-right:0;padding-right:0}
+  .fact b{display:block;font-family:var(--serif);font-size:30px;font-weight:300;color:var(--ink);line-height:1}
+  .fact span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+  section{padding:76px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:none}
+  .sec-label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);font-weight:500;margin:0 0 14px}
+  h2{font-family:var(--serif);font-weight:300;color:var(--ink);font-size:clamp(28px,4vw,40px);
+    line-height:1.15;margin:0 0 16px;letter-spacing:-.01em}
+  .lede{max-width:640px;color:var(--muted);margin:0 0 44px}
+
+  figure{margin:28px 0 0}
+  figure img{border:1px solid var(--line);border-radius:12px;background:var(--card)}
+  figcaption{font-size:13px;color:var(--muted);margin-top:10px;letter-spacing:.02em}
+
+  .pitch{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px 34px;margin-bottom:18px}
+  .pitch-top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+  .num{font-family:var(--serif);font-size:14px;color:var(--sand)}
+  .tool{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+    color:var(--muted);background:var(--cream);border-radius:99px;padding:5px 12px}
+  .pitch h3{font-family:var(--serif);font-weight:300;color:var(--ink);font-size:26px;line-height:1.25;margin:0 0 14px}
+  .pitch h4{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--sand);margin:26px 0 12px}
+  .pitch p{margin:0 0 16px;max-width:660px}
+  .pitch ul{margin:0 0 18px;padding-left:0;list-style:none;max-width:660px}
+  .pitch li{position:relative;padding-left:20px;margin-bottom:10px}
+  .pitch li::before{content:'';position:absolute;left:2px;top:11px;width:5px;height:5px;border-radius:50%;background:var(--sand-soft)}
+  .tag{font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;font-weight:500;
+    background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--muted);margin-right:6px}
+  blockquote{margin:0 0 4px;padding:16px 20px;background:var(--paper);border-radius:10px;
+    font-family:var(--serif);font-style:italic;font-weight:300;font-size:18px;line-height:1.5;color:var(--muted)}
+  blockquote.copy{background:var(--cream);font-style:normal;color:var(--body)}
+  .proto{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-size:13px;
+    letter-spacing:.06em;text-transform:uppercase;font-weight:500;color:var(--sand);
+    text-decoration:none;border-bottom:1px solid var(--sand-soft);padding-bottom:2px}
+  .proto:hover{color:var(--ink);border-color:var(--ink)}
+
+  .theme{display:grid;grid-template-columns:52px 1fr;gap:26px;padding:32px 0;border-top:1px solid var(--line)}
+  .theme:last-child{border-bottom:1px solid var(--line)}
+  .theme .n{font-family:var(--serif);font-size:34px;font-weight:300;color:var(--sand-soft);line-height:1}
+  .theme h3{font-family:var(--serif);font-weight:400;color:var(--ink);font-size:23px;margin:0 0 10px;line-height:1.3}
+  .theme p{margin:0 0 12px;max-width:660px}
+  .theme blockquote{font-size:16.5px;margin-bottom:12px}
+  .echo{font-size:14px;color:var(--muted);font-style:italic;font-family:var(--serif);margin:0}
+  .echo b{font-style:normal;font-family:var(--sans);font-weight:500;text-transform:uppercase;
+    letter-spacing:.1em;font-size:11px;color:var(--sand)}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .card{background:var(--cream);border-radius:14px;padding:26px 24px}
+  .card h3{font-family:var(--serif);font-weight:400;color:var(--ink);font-size:20px;margin:0 0 10px;line-height:1.3}
+  .card p{margin:0;font-size:15px;color:var(--muted);line-height:1.6}
+
+  .q{padding:28px 0;border-top:1px solid var(--line)}
+  .q:last-child{border-bottom:1px solid var(--line)}
+  .q h3{font-family:var(--serif);font-weight:400;color:var(--ink);font-size:22px;margin:0 0 10px}
+  .q p{margin:0 0 10px;max-width:680px}
+  .owner{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--sand)}
+
+  .tools{width:100%;border-collapse:collapse;margin-top:8px}
+  .tools th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:500;color:var(--sand);padding:0 16px 12px 0;border-bottom:1px solid var(--line)}
+  .tools td{padding:18px 16px 18px 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:15.5px}
+  .tools td:first-child{font-weight:500;color:var(--ink);white-space:nowrap}
+  .verdict{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;
+    padding:4px 10px;border-radius:99px;white-space:nowrap}
+  .v-yes{background:#e8ece3;color:#5c6b4c}
+  .v-mid{background:var(--cream);color:var(--muted)}
+  .v-no{background:#f0e6e4;color:#8a6a63}
+
+  .voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:16px;margin-bottom:40px}
+  .voice{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+  .voice p{font-family:var(--serif);font-style:italic;font-weight:300;font-size:17px;line-height:1.55;color:var(--body);margin:0}
+  .callout{background:var(--ink);color:var(--sand-soft);border-radius:16px;padding:42px 38px;margin-top:8px}
+  .callout h3{font-family:var(--serif);font-weight:300;color:#fff;font-size:26px;margin:0 0 14px;line-height:1.3}
+  .callout p{margin:0 0 14px;max-width:660px;color:#c8c0b5}
+  .callout p:last-child{margin-bottom:0}
+
+  .next ul{padding:0;margin:0}
+  .next li{position:relative;padding-left:26px;margin-bottom:14px;max-width:680px;list-style:none}
+  .next li::before{content:'';position:absolute;left:0;top:10px;width:9px;height:9px;border:1px solid var(--sand);border-radius:2px}
+  .next b{color:var(--ink);font-weight:500}
+
+  footer{padding:56px 0 80px;color:var(--muted);font-size:13.5px}
+  footer a{color:var(--sand)}
+
+  @media(max-width:620px){
+    body{font-size:16px}
+    header{padding:56px 0 40px}
+    section{padding:52px 0}
+    .wrap,.wide{padding:0 20px}
+    .pitch{padding:26px 22px}
+    .fact{padding-right:22px;margin-right:22px}
+    .theme{grid-template-columns:1fr;gap:8px}
+    .theme .n{font-size:26px}
+    .callout{padding:30px 24px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">Moonboon · Remote Creative Session · 24 August 2026</p>
+    <h1>Sleep Score<br>&amp; AI Summary</h1>
+    <p class="hmw">“How might we integrate in/from the home a sleep score and AI summary that help parents know better what to do and reach stronger peace of mind?”</p>
+    <div class="facts">
+      <div class="fact"><b>38</b><span>minutes</span></div>
+      <div class="fact"><b>7</b><span>pitches</span></div>
+      <div class="fact"><b>6</b><span>tools</span></div>
+      <div class="fact"><b>40+</b><span>concepts</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="sec-label">What this is</p>
+    <h2>Everything that got put on the table.</h2>
+    <p class="lede">One frame from the new home. Twenty minutes. Whatever tool you wanted. This is a readout of all of it — written after going back through every prototype properly, not just what fit into a five-minute demo.</p>
+    <p class="lede" style="margin-bottom:0">Pitches are grouped by the tool they came out of rather than by name. Everyone in the room knows which one is theirs. Every idea below is somebody's.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wide">
+    <p class="sec-label" style="max-width:640px">The pitches</p>
+    <h2 style="max-width:640px">Seven takes on the same question.</h2>
+    <p class="lede">In the order they were shown. The quotes in cream are the actual copy from the prototypes.</p>
+
+    <article class="pitch">
+      <div class="pitch-top"><span class="num">01</span><span class="tool">Claude Design</span></div>
+      <h3>A moon instead of a number</h3>
+      <p>Started from the concise-summary idea — one line you can read at a glance, with a click-through to something longer — then pushed the AI to make the result <em>actionable</em> rather than informational. Twelve concepts across four rounds.</p>
+
+      <h4>Round 1 — the score on Home</h4>
+      <ul>
+        <li><span class="tag">1a</span>Quiet line — one card, one sentence, everything else behind a tap.</li>
+        <li><span class="tag">1b</span>Split — score block plus its own action block, with the streak on the surface: “3 nights in a row above 70”, “Best week since early July”.</li>
+        <li><span class="tag">1c</span>Editorial — full-bleed panel with three tabs inside one block: <b>The night · Tonight · 2 weeks</b>. Ends with “Does this match your night? <b>Yes / Not quite</b>” — the only AI-accuracy feedback loop anyone designed.</li>
+      </ul>
+
+      <h4>Round 2 — “make it actionable”</h4>
+      <ul>
+        <li><span class="tag">2a</span><b>Today's Three</b> — a tickable plan under the score, showing “0 of 3 done”: cap the last nap by 4pm · start the motor before the 11pm dip · confirm the 7:45am nap. Each one carries its reason.</li>
+        <li><span class="tag">2b</span><b>Plan for the day</b> — suggested windows built from the last 7 days, each with an arm-able reminder. “Nap 2 · 11:15–12:30, in 2h. Longest nap of his day — worth protecting.”</li>
+      </ul>
+      <figure>
+        <img src="img/plan.png" alt="Today's Three checklist and Plan for the day concepts">
+        <figcaption>2a and 2b — the score stops being a verdict and becomes a to-do list you can arm reminders against.</figcaption>
+      </figure>
+
+      <h4>Round 3 — “78 is not fun in a baby app”</h4>
+      <ul>
+        <li><span class="tag">3a</span>A face, plus a week of faces you can tap to read.</li>
+        <li><span class="tag">3b</span><b>Moon phase — fullness is the score, no digits anywhere.</b> Fourteen moons across two weeks, and a panel titled “What would fill it further”.</li>
+      </ul>
+      <figure>
+        <img src="img/moon-faces.png" alt="Emoji week and moon-phase score concepts">
+        <figcaption>3a and 3b — a week of faces, and the moon that fills. Both end on a set-able action.</figcaption>
+      </figure>
+
+      <h4>Round 4 — “go bananas”</h4>
+      <ul>
+        <li><span class="tag">4a</span><b>Night print</b> — every night draws a unique ring (“no. 214”), and the year quilts into a grid where warmer means calmer. You can save the print.</li>
+        <li><span class="tag">4b</span><b>Replay the night</b> — scrub the hours and the summary rewrites itself as you go.</li>
+      </ul>
+      <figure>
+        <img src="img/night-print.png" alt="Night print ring and replay-the-night scrubber concepts">
+        <figcaption>4a and 4b — the night as an object you keep, and the night as something you scrub through.</figcaption>
+      </figure>
+      <blockquote>“78 is not super fun in a baby app.”</blockquote>
+      <p style="margin-top:16px">A two-week moon strip was judged too granular; the wish was something in between — a moon that reads happy, or a little tired. <b>The Figma Make attempt was abandoned on sight.</b> Which prompted the fair question: how can the tool with the best access to our actual designs be the worst at using them?</p>
+      <a class="proto" href="https://claude.ai/design/p/14c13590-e449-47e7-9dc9-7869c0a43164?via=share&amp;file=Sleep+Score+Concepts.dc.html" target="_blank" rel="noopener">Open the prototype →</a>
+    </article>
+
+    <article class="pitch">
+      <div class="pitch-top"><span class="num">02</span><span class="tool">Figma Make</span></div>
+      <h3>Score in the corner, depth on tap</h3>
+      <p>Deliberately small and concrete: greeting and summary on the left, score on the right, compared against the weekly average with a trend arrow so you can see it moving. Tap it and you go deeper — a four-level ladder.</p>
+      <ul>
+        <li>Level 1 — the score plus “better or worse than usual”.</li>
+        <li>Level 2 — the five underlying scores that make it up.</li>
+        <li>Level 3 — charts across whatever period you filter for.</li>
+        <li>Level 4 — <b>prediction history and notification history</b>, for the parents who want it.</li>
+      </ul>
+      <p>“More and more detail, the deeper you go down, if you are interested.”</p>
+      <blockquote>“I kind of wonder where the 78 for your score came from — I didn't suggest anything.”</blockquote>
+      <p style="margin-top:16px">That turned out to be the sharpest observation of the session. Across every prototype built that day the models invented <b>78, 82, 90%, 88 and “8 of 10”</b> — all unprompted, none agreeing. The number is currently a placeholder wearing a lab coat.</p>
+    </article>
+
+    <article class="pitch">
+      <div class="pitch-top"><span class="num">03</span><span class="tool">Figma Make + Claude Design</span></div>
+      <h3>Feed it our design system and it behaves</h3>
+      <p>Two runs of the same brief. Run one — the home screen plus a paragraph of context — came out badly. Run two added <b>the Moonboon skill as context</b>, and it kept most of the home components in place. Same tool, same twenty minutes, completely different result.</p>
+      <ul>
+        <li>Aura-style score with a very short description.</li>
+        <li>A menu to <b>personalise your coaching style</b> — how direct do you want the app to be with you.</li>
+        <li>Tap the score → why it's that number. “Show more” → the contributing metrics, broken down.</li>
+        <li>A caveat on that breakdown, said out loud: giving every contributor its own exact sub-score is probably exaggerated.</li>
+        <li>The Claude Design lo-fi run did something none of the others did — it <b>reused the home's existing components</b>, making the score a section of the home rather than a new thing bolted on.</li>
+      </ul>
+      <blockquote>“In Figma you always land with one screen and then you iterate from there. This seems better if you have a very specific context.”</blockquote>
+      <a class="proto" href="https://claude.ai/design/p/7343f322-669a-481f-b175-50dd4979d77b?file=Sleep+Summary.dc.html" target="_blank" rel="noopener">Open the prototype →</a>
+    </article>
+
+    <article class="pitch">
+      <div class="pitch-top"><span class="num">04</span><span class="tool">Claude Code</span></div>
+      <h3>Six safe ones, then three wild ones</h3>
+      <p>All in on one tool, starting from nothing but the how-might-we sentence and the screenshots. The first pass didn't realise it had to reuse our UI, so it invented a scrollable timeline and a tappable moon. Then it got steered back into the app — and produced the widest spread of the day.</p>
+      <figure>
+        <img src="img/four-ways.png" alt="The dial, the scrubbable ribbon and the moon that fills">
+        <figcaption>The off-brief first pass: a dial you can trust, a ribbon you drag to hear the night narrated, and a moon that fills instead of a number. Wrong UI, right questions.</figcaption>
+      </figure>
+
+      <h4>Inside the real home screen</h4>
+      <ul>
+        <li><span class="tag">2a</span>By the book — the score becomes the lead stat inside “My day”, the summary is one more card.</li>
+        <li><span class="tag">2b</span>Score first — a hero card above Devices that expands into its own reasoning. Carries a “Why this score” link.</li>
+        <li><span class="tag">2c</span><b>The AI lives in the log</b> — insight rows sit between the naps, at the hour they happened. “Worth knowing · 04:20 — one real waking, fed and back down in six minutes.”</li>
+      </ul>
+      <figure>
+        <img src="img/embedded.png" alt="Three concepts embedding the score into the existing home screen">
+        <figcaption>The score inside the existing card grammar — including “Ask about last night →”, a conversational way in.</figcaption>
+      </figure>
+
+      <h4>Then variations on tone</h4>
+      <ul>
+        <li><span class="tag">3b</span>The summary as <b>three plain findings</b>, numbered 01–02–03, ending in one instruction.</li>
+        <li><span class="tag">3e</span>The log becomes a <b>timeline spine</b> with insights hanging off it at the hour they happened.</li>
+        <li><span class="tag">3f</span><b>One pinned insight</b>, the rest folded away — with a “Not useful” button next to it.</li>
+        <li><span class="tag">4d</span>The summary <b>signed like a note</b>: “— moonboon, 07:04”.</li>
+        <li><span class="tag">4e</span><b>Score as words first</b>, the number stepping back behind the verdict.</li>
+        <li><span class="tag">4f</span>A dark <b>night recap</b> card — the one dark surface on the sand page.</li>
+      </ul>
+      <figure>
+        <img src="img/voice.png" alt="Three concepts exploring the voice of the summary">
+        <figcaption>Same data, three voices. Note the third: “While you slept, Max put himself back to sleep twice. You were only needed once, at 04:20.”</figcaption>
+      </figure>
+
+      <h4>And “go nuts”</h4>
+      <ul>
+        <li><b>The night sky.</b> Every quiet hour is a star. Tap one and it tells you what happened. “A restful night. <b>Only one star was yours.</b>”</li>
+        <li><b>The breathing orb.</b> It breathes at the baby's resting pace. Hold it for a breath and the night opens.</li>
+        <li><b>The Max Times.</b> The night typeset as a tiny front page, made to screenshot and send. “Boy, 11 weeks, settles himself back to sleep. Twice. Parents report only one call-out; motor credited with an assist.”</li>
+      </ul>
+      <figure>
+        <img src="img/wild.png" alt="Night sky, breathing orb and The Max Times concepts">
+        <figcaption>The three wild ones, side by side. All of them are live — tap, hold, drag.</figcaption>
+      </figure>
+      <blockquote>“That's a nice way of zooming into the night. It's a good metaphor.”</blockquote>
+      <p style="margin-top:16px">Honest caveat from the room: the stars need a very precise finger. The metaphor survives; the hit targets don't.</p>
+      <figure>
+        <img src="img/one-thing.png" alt="One instruction at a time concept">
+        <figcaption>The most reduced concept of the whole session: last night as ten blocks, then one sentence. “Start the wind-down at 6:40.”</figcaption>
+      </figure>
+      <a class="proto" href="https://claude.ai/design/p/1c17db21-ece8-4112-b0af-73006cfbf759?via=share&amp;file=Sleep+Score+Explorations.dc.html" target="_blank" rel="noopener">Open the prototype →</a>
+    </article>
+
+    <article class="pitch">
+      <div class="pitch-top"><span class="num">05</span><span class="tool">Charts &amp; mockups</span></div>
+      <h3>Readiness, not a report card</h3>
+      <p>Not aiming at good-looking design — aiming at what the data can actually support. We know when the baby cried and how often; once motors report their actions to the backend we know that too. Both go on a timeline, with activity highlighted.</p>
+      <p>Then the reframe that changed the shape of the conversation:</p>
+      <blockquote>“The focus was on sleep readiness — not about how the last sleep was, but how the next one will be.”</blockquote>
+      <p style="margin-top:16px">This isn't new — it came out of the design work done before the Flutter rebuild, discussed at length back then. From naps and motor actions, a readiness prediction should be derivable. And unlike a retrospective score, readiness has an obvious action attached: <b>start a motor programme now.</b></p>
+      <p><b>It was independently reinvented on the same day.</b> One of the design prototypes had already produced this, without anyone in the room having seen it:</p>
+      <blockquote class="copy">SLEEP READINESS · 78 · ready for a nap<br><span style="color:var(--muted);font-size:15px">now · in 20m · in 40m · in 1h — “Max has been awake 1h 40m and last night ran short. His window opens in about 15 minutes — start rocking a little early.” <b>Start rocking · Gentle Waves · 20m</b></span></blockquote>
+      <figure>
+        <img src="img/readiness.png" alt="Timeline-led and readiness-led score concepts">
+        <figcaption>Right-hand card: the readiness pitch, drawn by a tool that had never heard it. The slider is the next sleep window, and the button under it starts the motor.</figcaption>
+      </figure>
+      <p style="margin-top:16px">And a second one framed it as the whole point of the widget: <b>“Two facts, one strip: quality behind you, readiness ahead of you. Rocking starts from the same row.”</b></p>
+      <figure>
+        <img src="img/widgets.png" alt="Compact sleep summary widget concepts, one showing ready to nap in 15m">
+        <figcaption>“Last night 90% · Ready to nap in 15m” — quality behind you, readiness ahead of you, and <b>Start rocking</b> on the same row.</figcaption>
+      </figure>
+      <ul>
+        <li>Open question left in the room: is the formula real, and how precise? <b>Marie knows the most about that.</b></li>
+      </ul>
+    </article>
+
+    <article class="pitch">
+      <div class="pitch-top"><span class="num">06</span><span class="tool">Google Stitch</span></div>
+      <h3>Whose score is it, anyway?</h3>
+      <p>Concept-first rather than visual-first, and the only pitch that asked a question everyone else skipped: the sleep score — <em>for which baby?</em></p>
+      <ul>
+        <li>A <b>baby switcher at the very top of the home</b> — Mio, Luna, Add — sitting above everything else.</li>
+        <li>The score card above Devices: “Sleep Score 88 · Excellent pattern”.</li>
+        <li>Tap it → the metrics that compose it: sleep duration, bedtime, and <b>environment data pulled from the monitor</b>.</li>
+        <li>The AI summary underneath.</li>
+        <li>When a metric is weak, <b>recommend one of our products that would improve it.</b></li>
+        <li>History with a week / month / year filter, and insights per period.</li>
+        <li>Per-baby screens, consistent with the family concept we're already building.</li>
+      </ul>
+      <figure>
+        <img src="img/stitch.png" alt="Stitch concept with baby switcher above the sleep score">
+        <figcaption>The only concept that put more than one baby on the home screen.</figcaption>
+      </figure>
+      <blockquote>“If you identify that the sleep score is not ideal for some of the metrics, we can try to propose some product to improve it.”</blockquote>
+      <p style="margin-top:16px">The product recommendation is the only idea in the session that pays for itself.</p>
+      <a class="proto" href="https://stitch.withgoogle.com/preview/16504083634735524584?node-id=c158c0197cac47c680103fd4c0babe9d" target="_blank" rel="noopener">Open the prototype →</a>
+    </article>
+
+    <article class="pitch">
+      <div class="pitch-top"><span class="num">07</span><span class="tool">Paper</span></div>
+      <h3>One-to-one with the real UI</h3>
+      <p>The deliberately unadventurous one: less about a new idea, more about which tool gets closest to the UI we actually have. Step one was “remake this Figma frame one-to-one” — and it did, near-perfectly, fonts aside. <b>Closest of anything tested.</b></p>
+      <p>From that accurate base, four variants off the same how-might-we — all of them keeping Devices on screen and slotting the score into “My day”:</p>
+      <ul>
+        <li><span class="tag">A</span><b>One card</b> — 82, “Good · +4 vs last week”, the three existing stats folded inside, then the summary and two buttons: <i>Try earlier bedtime</i> · <i>More</i>.</li>
+        <li><span class="tag">B</span><b>Ring hero</b> — the Aura-style ring, with the follow-up collapsed into one row: “Two wakings after 3am — how to fix it ⌄”.</li>
+        <li><span class="tag">C</span><b>Editorial</b> — big serif 82 “out of 100”, stats reduced to one line, the summary as body copy.</li>
+        <li><span class="tag">D</span><b>Split</b> — score with a 7-day sparkline, and a separate <b>Sleep Coach</b> block: “Move bedtime to 7:10 pm — 20 min earlier than tonight” <i>[Try it ›]</i>.</li>
+      </ul>
+      <figure>
+        <img src="img/paper-variants.png" alt="Five Paper artboards: the baseline home and four score variants">
+        <figcaption>Left: the real home rebuilt 1:1. Then four ways to fit the score into it without breaking it.</figcaption>
+      </figure>
+      <p>Worth noting these summaries are about <b>the day</b>, not just the night — “Naps were well spaced, but two wakings landed after 3am”. And the tension this exposed is the most practical problem in the whole session:</p>
+      <blockquote>“If we let this take so much space, we push the whole overview of the naps down.”</blockquote>
+      <p style="margin-top:16px">Counter-argument raised immediately: if the score and summary <em>are</em> what you came to find out, the raw nap list has earned its place further down. The room didn't settle it.</p>
+      <a class="proto" href="https://app.paper.design/file/01M0SPHAQQ3WRJY2DFD32BGWN5/1-0" target="_blank" rel="noopener">Open the prototype →</a>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sec-label">Convergence</p>
+    <h2>Seven things we arrived at separately.</h2>
+    <p class="lede">Different tools, different people, no coordination — these showed up anyway. That makes them worth trusting.</p>
+
+    <div class="theme">
+      <div class="n">01</div>
+      <div>
+        <h3>Peace of mind is “you were needed less than you think”.</h3>
+        <p>This is the strongest finding in the whole corpus and nobody said it out loud in the room — it only shows up when you read the prototypes' actual copy side by side. Independently, across three different tools, the summaries stopped describing the baby and started describing <em>the parent's night</em>.</p>
+        <blockquote class="copy">“Only one star was yours.” · “You were only needed once, at 04:20.” · “No motor, no you.” · “For you — 1 waking.” · “He settled himself back twice, <b>without you going in</b>.”</blockquote>
+        <p style="margin-top:12px">Total sleep is a fact. “You were only needed once” is relief. If the summary has one job, this is it.</p>
+        <p class="echo"><b>Found in</b> — 01, 03, 04, independently.</p>
+      </div>
+    </div>
+
+    <div class="theme">
+      <div class="n">02</div>
+      <div>
+        <h3>Permission to do nothing is a feature.</h3>
+        <p>Several concepts made a point of telling the parent that nothing is wrong — “Textbook at eleven weeks. Nothing to change.” · “Nothing here needs fixing.” · “Keep bedtime where it is and let him practise.”</p>
+        <p>A score that only ever produces homework becomes a source of guilt at 3am. A score that sometimes says <em>you're doing fine, change nothing</em> is the one parents will keep opening.</p>
+        <p class="echo"><b>Found in</b> — 01, 04.</p>
+      </div>
+    </div>
+
+    <div class="theme">
+      <div class="n">03</div>
+      <div>
+        <h3>One line first. Depth only if you ask for it.</h3>
+        <p>Every single pitch built the same ladder: a glanceable line → tap for why → tap again for the contributing metrics → charts and history at the bottom. Nobody proposed showing it all at once, and the versions that tried were rejected as “too Aura”.</p>
+        <p class="echo"><b>Found in</b> — all seven.</p>
+      </div>
+    </div>
+
+    <div class="theme">
+      <div class="n">04</div>
+      <div>
+        <h3>Every good version ends in exactly one instruction.</h3>
+        <p>The moment anyone asked their tool for something “more actionable”, the output got better — and it converged hard. Not a list of advice: <b>one thing, with its reason, that you can arm right now.</b></p>
+        <blockquote class="copy">“Cap the last nap by 4 pm — his two calmest nights this week started that way.” <i>[Remind me at 3:30]</i><br>“Move bedtime to 7:10 pm — 20 min earlier than tonight.” <i>[Try it ›]</i><br>“Start rocking a little early.” <i>[Gentle Waves · 20m]</i></blockquote>
+        <p style="margin-top:12px">Note where those buttons go: a reminder, or <b>the motor</b>. The action isn't advice — it's a thing our hardware does.</p>
+        <p class="echo"><b>Found in</b> — 01, 04, 05, 06, 07.</p>
+      </div>
+    </div>
+
+    <div class="theme">
+      <div class="n">05</div>
+      <div>
+        <h3>A bare number is wrong for a baby app.</h3>
+        <p>“78 is not super fun in a baby app” landed, and kept landing: moon fullness, a week of faces, the orb, the night sky, “8 of 10”, and several concepts where the number deliberately steps back behind the verdict. The number can stay — but the thing a sleep-deprived parent sees first should feel warm, not clinical.</p>
+        <p class="echo"><b>Found in</b> — 01, 04, and agreed aloud by the room.</p>
+      </div>
+    </div>
+
+    <div class="theme">
+      <div class="n">06</div>
+      <div>
+        <h3>Embed it in the home. Don't bolt on a new section.</h3>
+        <p>Every prototype that wandered off into a bespoke full-screen timeline got pulled back by hand. The versions people liked reused existing home components — replacing a stat, extending “My day”, or slipping insight rows in among the naps. One prototype set it as an explicit constraint: <b>“devices kept on screen … nothing is pushed off screen.”</b></p>
+        <p class="echo"><b>Found in</b> — 03, 04, 07.</p>
+      </div>
+    </div>
+
+    <div class="theme">
+      <div class="n">07</div>
+      <div>
+        <h3>Nobody knows what the score is — and the AI is happy to guess.</h3>
+        <p>Across the day the models produced <b>78, 82, 88, 90% and “8 of 10”</b>, on three different scales, with no two agreeing on the contributors. One prototype quietly refused to claim deep-vs-light sleep at all — <b>“no deep/light claims”</b> — because our sensors can't support it. Another one showed it anyway.</p>
+        <p>That gap is the real work sitting under every design in this document.</p>
+        <p class="echo"><b>Raised in</b> — 02, then visible everywhere once pointed out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sec-label">Keep these alive</p>
+    <h2>The wild ones we shouldn't quietly bin.</h2>
+    <p class="lede">Said out loud as “probably not shippable” — but these are the only things from the session that nobody would find in a competitor teardown.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>The night sky</h3>
+        <p>Stars are wake-ups, laid out across the night. The room's favourite metaphor. The interaction is fiddly; the idea of <em>zooming into a night</em> is not. And its one line — “only one star was yours” — is the best sentence anyone wrote all day.</p>
+      </div>
+      <div class="card">
+        <h3>The night print</h3>
+        <p>Every night draws a unique ring, numbered, and the year quilts into a warm grid. Turns tracking into something you'd keep rather than something you check. Also the only concept with any sentimental value.</p>
+      </div>
+      <div class="card">
+        <h3>Moon fullness as the score</h3>
+        <p>Fullness <em>is</em> the number — no digits anywhere — with “what would fill it further” underneath. Warmer than a ring, and native to the brand in a way a percentage never will be.</p>
+      </div>
+      <div class="card">
+        <h3>Hold the orb, take a breath</h3>
+        <p>It breathes at the baby's resting pace. The only concept that treats the parent as someone who might also need calming. Peace of mind as an interaction, not a data point.</p>
+      </div>
+      <div class="card">
+        <h3>The Max Times</h3>
+        <p>The night as a tiny front page, built to screenshot and send. Nobody thinks we ship it — but it's the only concept designed to leave the app, and grandparents are a real audience.</p>
+      </div>
+      <div class="card">
+        <h3>Pick your coaching style</h3>
+        <p>Let parents choose how direct the app is with them. Cheap to build, and it defuses the risk of an AI summary that reads as judgement.</p>
+      </div>
+      <div class="card">
+        <h3>“Does this match your night?”</h3>
+        <p>A quiet <b>Yes / Not quite</b> under the summary. The only mechanism anyone designed for finding out whether our AI is actually right — and the cheapest training signal we'll ever get.</p>
+      </div>
+      <div class="card">
+        <h3>Readiness for the next sleep</h3>
+        <p>Not a wildcard so much as a fork in the road. Arrived at twice on the same day, from opposite ends of the team. The only idea that points the score forwards instead of grading the past.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sec-label">Unresolved</p>
+    <h2>What we didn't answer.</h2>
+    <p class="lede">Written down so they don't get quietly decided by whoever builds first.</p>
+
+    <div class="q">
+      <h3>What does the score actually measure — and on what scale?</h3>
+      <p>Five contributors were sketched, but no two prototypes agreed on which five, and every number shown was invented by a model. Out of 100? A percentage? Out of ten? A moon? This is the load-bearing question under every design here.</p>
+      <p class="owner">Needs a definition before anything else</p>
+    </div>
+
+    <div class="q">
+      <h3>What are we allowed to claim?</h3>
+      <p>One prototype explicitly refused deep/light sleep stages as unsupportable from our sensors. Another drew a full hypnogram. Same brief, same day. We need a written line on what the monitor and motor can honestly infer — cries, motion, motor runtime, temperature — and what we must not dress up as sleep science.</p>
+      <figure>
+        <img src="img/hypnogram.png" alt="Two summary concepts, one with a full deep/light hypnogram">
+        <figcaption>Right: “Deep · Light · Cry heard”, drawn confidently. The brief for the very next concept began “no deep/light claims”. Both are in this session.</figcaption>
+      </figure>
+      <p class="owner">Needs a written constraint</p>
+    </div>
+
+    <div class="q">
+      <h3>Is sleep readiness computable from what we have?</h3>
+      <p>The belief from the earlier design work was that naps plus motor actions are enough. Nobody in the room could name the formula or vouch for its precision. <b>Marie knows the most about this</b> — and it changes the product if the answer is yes, because readiness has a motor start attached to it and a retrospective score doesn't.</p>
+      <p class="owner">Ask Marie</p>
+    </div>
+
+    <div class="q">
+      <h3>Does the summary earn its space on the home?</h3>
+      <p>A score plus a summary plus an action pushes the nap overview down. Fair, if that's what people came for — unfair if it isn't. Two suggestions on the table: make it <b>collapsible once you've read it</b> (it's not relevant all day), or let people <b>configure their own home screen</b>, which is lovely and adds real complexity. Several prototypes solved it by shrinking to one tappable line at rest.</p>
+      <p class="owner">Needs a decision before build</p>
+    </div>
+
+    <div class="q">
+      <h3>How do multiple babies work?</h3>
+      <p>Current thinking is a switcher via the baby in the top-left rather than a family overview — a few taps, but manageable. The counter: if you have two babies in the same age range you're exactly the person who switches constantly, so the cost lands on the people who feel it most. Twins are the real case; siblings are usually years apart.</p>
+      <p class="owner">Continues in Friday's conversation</p>
+    </div>
+
+    <div class="q">
+      <h3>What happens to the first baby?</h3>
+      <p>A second baby two years later shouldn't mean wiping the first. Parents will want the history, and some will want to <b>compare siblings at the same age</b>. Proposal from the room: <b>archive rather than delete</b>, tucked away in settings — standard pattern, low cost, avoids a destructive default.</p>
+      <p class="owner">Easy win, just needs picking up</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sec-label">Side finding</p>
+    <h2>What we learned about the tools.</h2>
+    <p class="lede">Unintentionally, this was also a bake-off. The headline: context beats tool choice, by a mile.</p>
+    <table class="tools">
+      <thead><tr><th>Tool</th><th>What it did</th><th style="text-align:right">Verdict</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Paper</td>
+          <td>Rebuilt our Figma home one-to-one, near-perfectly; fonts needed a manual fix. Got closest to shippable UI of anything tested — though one person couldn't get into it inside 20 minutes.</td>
+          <td style="text-align:right"><span class="verdict v-yes">Closest to real UI</span></td>
+        </tr>
+        <tr>
+          <td>Claude Design</td>
+          <td>Strong at lo-fi divergence and at reusing existing components when shown them. Prototypes are fully interactive, so you click through concepts rather than reading a board — and things can be copied straight out.</td>
+          <td style="text-align:right"><span class="verdict v-yes">Best for divergence</span></td>
+        </tr>
+        <tr>
+          <td>Claude Code</td>
+          <td>Produced the widest spread by far — around twenty concepts, including every one of the wildcards above. Needs steering back toward the existing UI, repeatedly.</td>
+          <td style="text-align:right"><span class="verdict v-yes">Best “go nuts”</span></td>
+        </tr>
+        <tr>
+          <td>Google Stitch</td>
+          <td>Good at whole flows and concept-level thinking rather than pixel fidelity. Carried a multi-screen idea end to end, and was the only one to question the single-baby assumption.</td>
+          <td style="text-align:right"><span class="verdict v-mid">Solid for concepts</span></td>
+        </tr>
+        <tr>
+          <td>Figma Make <i>(raw)</i></td>
+          <td>Abandoned on sight by one person; poor for another. The tool with the best theoretical access to our design files was the worst at respecting them.</td>
+          <td style="text-align:right"><span class="verdict v-no">Don't bother</span></td>
+        </tr>
+        <tr>
+          <td>Figma Make <i>(+ Moonboon skill)</i></td>
+          <td><b>Same tool, given our design skill as context — and it held the home components in place.</b> The single most reusable finding of the session.</td>
+          <td style="text-align:right"><span class="verdict v-yes">Works with context</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:32px;max-width:680px"><b style="color:var(--ink);font-weight:500">The takeaway:</b> the difference between a useless output and a usable one was not which tool someone picked — it was whether the tool was handed our design system. That's worth making a default before the next session.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sec-label">The format</p>
+    <h2>How it felt in the room.</h2>
+    <div class="voices">
+      <div class="voice"><p>“It was a quite narrowed-down scope — it seems obvious what you would do. But there were a lot of ideas that bring us out of the box that we wouldn't have gone to without this session.”</p></div>
+      <div class="voice"><p>“I liked having a bit more time. With these tools you sometimes end up with something random — having time to prompt it in the direction is good.”</p></div>
+      <div class="voice"><p>“A good pretaste for a hackathon day. It shows the value we can start getting from these sessions.”</p></div>
+      <div class="voice"><p>“We need to do this more often — whenever we need to build something. The team's opinion and suggestions is always nice to combine.”</p></div>
+      <div class="voice"><p>“In 20 minutes you have 20 different concepts. Imagine how much we can accomplish during a hackathon.”</p></div>
+      <div class="voice"><p>“I've done enough stressful one-minute-per-idea setups. Let's relax.”</p></div>
+    </div>
+
+    <div class="callout">
+      <h3>And one more thing, said honestly.</h3>
+      <p>Someone in the room said they felt out of their depth — “I'm not a designer, I don't feel like I bring too much value.”</p>
+      <p>That pitch contained the only reframe of the entire session: <b style="color:#fff;font-weight:500">score the next sleep, not the last one.</b> Six people with six design tools all built a report card. One person who wasn't trying to design anything asked whether we were pointing the thing in the right direction at all — and by the end of the day two separate prototypes had independently agreed with him.</p>
+      <p>Which is the whole argument for doing this with the full team rather than just the design side. The tools flatten the craft gap; what's left is who has the idea.</p>
+    </div>
+  </div>
+</section>
+
+<section class="next">
+  <div class="wrap">
+    <p class="sec-label">Next</p>
+    <h2>What happens with all this.</h2>
+    <ul>
+      <li><b>Define the score.</b> Which contributors, what weighting, what scale, what it means. Everything above is blocked on this and nothing above answers it.</li>
+      <li><b>Write down what we're allowed to claim</b> from the monitor and motor — and what we're not. One prototype already refused deep/light; another didn't.</li>
+      <li><b>Ask Marie about readiness.</b> If naps plus motor actions can predict the next sleep, that's a different product than the one we were sketching — and it's the one with a motor start attached.</li>
+      <li><b>Settle the home real estate.</b> Full card, collapsible after read, or configurable — pick one before anyone builds.</li>
+      <li><b>Carry the multi-baby thread into Friday's conversation,</b> and pick up “archive, don't delete” as a cheap early win.</li>
+      <li><b>Make “give it the Moonboon skill” the default</b> for every tool, in every session from here.</li>
+      <li><b>Do this again each sprint.</b> Same shape: a narrow question, twenty unhurried minutes, any tool, five minutes each to pitch.</li>
+    </ul>
+    <p style="margin-top:36px;font-family:var(--serif);font-style:italic;font-size:20px;color:var(--muted);max-width:600px">“It's our product, and we make it more ours as we go.”</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Sleep Score &amp; AI Summary — Moonboon remote creative session, 24 August 2026.<br>
+    Starting point: <a href="https://www.figma.com/design/oPvKdrg8UiJqjL86GXau5K/Home---IA?node-id=1449-20467" target="_blank" rel="noopener">Home — IA</a>, new home frame.<br>
+    Written from the recording and from every prototype, read end to end. Something missing or mis-remembered? Say so and it gets fixed.
+  </div>
+</footer>
+
+</body>
+</html>
